@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>import Cocoa
+// How to create variables
+var greeting = "Hello, playground"
+print(greeting)
+greeting = "Hello, today is my lucky day"
+print(greeting)
+// Constants are created using let keyword
+let name = "Sanket"
+print(name)
+
+
+// How to create strings
+let actor = "Amitabh Bacchan"
+let tvShow = "KBC"
+// In order to show " in string we can use escape sequence character
+// Strings are case sensitive in SwiftUI
+let dialogue = "Famous Dialogue is \"Lock kiya jaye\""
+print(actor)
+print(tvShow)
+print(dialogue)
+let movie = """
+Example of an declaring
+multi-line string.
+"""
+print(movie)
+print(actor.count)
+print(actor.uppercased())
+print(dialogue.hasPrefix("Famous"))
+print(actor.hasSuffix("Bacchan"))
+
+
+// How to use numbers
+let score = 100
+print("Score", score)
+let new_score = score - 10
+print("New score", new_score)
+// you can use underscores, _, to break up numbers however you want.
+let different_numb = "100_00_000"
+print(different_numb)
+
+print("is number multiple of 10", score.isMultiple(of: 10))
+</string>
+			<key>ModifiedRange</key>
+			<string>{0, 1004}</string>
+			<key>OriginalContent</key>
+			<string>
+</string>
+			<key>OriginalRange</key>
+			<string>{0, 1}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>

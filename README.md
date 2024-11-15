@@ -9,7 +9,7 @@ This repository documents my learning and growth as I explore **SwiftUI**, Apple
 ## 🗓️ Journey Overview  
 
 - **Start Date:** 15-November-2024 
-- **End Date:** 23-November-2025
+- **End Date:** 23-February-2025
 - **Commitment:**  
   - Spend at least 1–2 hours daily learning SwiftUI.  
   - Document key learnings, challenges, and solutions in this repository.  
