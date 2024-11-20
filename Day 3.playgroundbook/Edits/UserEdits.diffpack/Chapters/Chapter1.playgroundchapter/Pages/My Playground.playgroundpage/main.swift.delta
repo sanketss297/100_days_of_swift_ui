@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>import Cocoa
+
+var cars = ["Hyundai","BMW", "Audi", "Mercedes"]
+print(cars)
+print("Cars contains 'bmw' \(cars.contains("BMW"))")
+cars.append("Skoda")
+print(cars.sorted())
+var carsReversed = cars.reversed()
+print(carsReversed.first)
+
+var vowels = Array&lt;Character&gt;()
+vowels.append("A")
+vowels.append("E")
+vowels.append("I")
+vowels.append("O")
+print(vowels)
+print("count of vowels \(vowels.count)")
+// Removing I which is at 2nd position
+vowels.remove(at:2)
+print(vowels)
+vowels.removeAll()
+print(vowels)
+
+
+// Dictionaries in swiftUI
+
+var empDetails = ["name":"Sanket Sonawane",
+                  "email": "sanketsonawane297@gmail.com",
+                  "city": "Nashik",
+                  "country":"India"]
+print("name: \(empDetails["name"]!)")
+
+var player = [String: String]()
+player["name"] = "Sachin Tendulkar"
+player["game"] = "Cricket"
+print(player)
+
+// Sets in SwiftUI
+// It stores only unique elements in unordered manner
+// It also has same method contains() and sorted()
+var carSet = Set(cars)
+print(carSet)
+
+carSet.insert("Volkswagon")
+carSet.insert("Kia")
+carSet.insert("Volkswagon")
+print(carSet)
+
+// Enum in SwiftUI
+enum Weekday {
+    case monday
+    case tuesday
+    case wednesday
+    case thursday
+    case friday
+}
+
+var day = Weekday.monday
+print(day)
+</string>
+			<key>ModifiedRange</key>
+			<string>{0, 1268}</string>
+			<key>OriginalContent</key>
+			<string>
+</string>
+			<key>OriginalRange</key>
+			<string>{0, 1}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>
