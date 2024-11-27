@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>import Cocoa
+
+var isAuthenticated: Bool = false
+var cars: [String] = ["BMW", "Audi"]
+var userDetails: [[String: String]] = [["username": "sanket", "email":"sanketsonawane297@gmails.com"], ["username": "pratik", "email":"pratik0410@gmail.com"]]
+var books: Set&lt;String&gt; = Set(["Bharatiya Sanskriti"])
+
+enum UIStyle {
+    case light, dark, system
+}
+
+var style = UIStyle.light
+
+
+// Below line will give error cannot assign value of type 'String' to type 'UIStyle'
+// style = ""
+
+// The challenge is to create an array of strings, then write some code that prints the number of items in the array and also the number of unique items in the array.
+
+var carBrands: [String] = ["BMW", "Audi", "Hyundai", "Tesla", "BMW", "Audi"]
+print("Car brands count in an array \(carBrands.count)")
+var uniqueCarBrands: Set&lt;String&gt; = Set(carBrands)
+print("Car brands count in a set \(uniqueCarBrands.count)")
+
+</string>
+			<key>ModifiedRange</key>
+			<string>{0, 887}</string>
+			<key>OriginalContent</key>
+			<string></string>
+			<key>OriginalRange</key>
+			<string>{0, 0}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>
