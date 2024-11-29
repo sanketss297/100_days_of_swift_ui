@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>import Cocoa
+
+var username: String = ""
+if username.isEmpty {
+    username = "Anonymous"
+}
+
+print("Welcom \(username)")
+
+
+let country = "Canada"
+
+if country == "Australia" {
+    print("G'day!")
+}
+
+
+var nums = [1, 2, 3]
+nums.append(4)
+
+if nums.count &gt; 3 {
+    nums.remove(at: 0)
+}
+print(nums)
+
+
+let age = 16
+
+if age &gt;= 18 {
+    print("You can vote in the next election.")
+} else {
+    print("Sorry, you're too young to vote.")
+}
+
+
+enum TransportOption {
+    case airplane, helicopter, bicycle, car, scooter
+}
+
+let transport = TransportOption.airplane
+
+if transport == .airplane || transport == .helicopter {
+    print("Let's fly!")
+} else if transport == .bicycle {
+    print("I hope there's a bike path…")
+} else if transport == .car {
+    print("Time to get stuck in traffic.")
+} else {
+    print("I'm going to hire a scooter now!")
+}
+
+
+switch transport {
+case .airplane:
+    print("Let's Fly!")
+case .helicopter:
+    print("Let's Fly!")
+case .bicycle:
+    print("Let's Fly!")
+case .car:
+    print("Let's Fly!")
+case .scooter:
+    print("Let's Fly!")
+default:
+    print("No transport option!")
+}
+
+
+enum Theme {
+    case light, dark
+}
+
+let theme = Theme.dark
+
+let background = theme == .dark ? "black" : "white"
+print(background)
+</string>
+			<key>ModifiedRange</key>
+			<string>{0, 1230}</string>
+			<key>OriginalContent</key>
+			<string>
+</string>
+			<key>OriginalRange</key>
+			<string>{0, 1}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>
