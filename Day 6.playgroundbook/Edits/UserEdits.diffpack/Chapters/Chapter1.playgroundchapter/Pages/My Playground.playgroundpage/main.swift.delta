@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>import Cocoa
+
+for index in 1...10 {
+    print(index)
+}
+
+for index in 1...10 {
+    if index % 2 == 0 {
+        print("\(index) is even number.")
+    } else {
+        print("\(index) is odd number.")
+    }
+}
+
+var countDown = 10
+while countDown &gt; 0 {
+    print("\(countDown) ..")
+    countDown -= 1
+}
+print("Blast Off !!")
+
+
+let filenames = ["rishikesh.jpg", "work.txt", "masoorie.jpg", "logo.psd"]
+
+for filename in filenames {
+    if filename.hasSuffix(".jpg") == false {
+        continue
+    }
+
+    print("Found picture: \(filename)")
+}
+
+for index in 1...10 {
+    print (index)
+    if index % 5 == 0 {
+        break
+    }
+}
+print("--------------")
+for index in 1...10 {
+    if index % 2 == 0 {
+        continue
+    }
+    print (index)
+}
+print("--------------")
+for index in 1...100 {
+    if index.isMultiple(of: 3) &amp;&amp; index.isMultiple(of: 5) {
+        print("FizzBuzz")
+    } else if index.isMultiple(of: 3) {
+        print("Fizz")
+    } else if index.isMultiple(of: 5) {
+        print("Buzz")
+    } else {
+        print(index)
+    }
+}
+</string>
+			<key>ModifiedRange</key>
+			<string>{1, 1035}</string>
+			<key>OriginalContent</key>
+			<string></string>
+			<key>OriginalRange</key>
+			<string>{1, 0}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>
