@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>import Cocoa
+func showWelcome() {
+    print("Welcome to my app!")
+    print("By default This prints out a conversion")
+    print("chart from centimeters to inches, but you")
+    print("can also set a custom range if you want.")
+}
+
+showWelcome()
+
+func printTimesTables(number: Int, end: Int) {
+    for i in 1...end {
+        print("\(i) x \(number) is \(i * number)")
+    }
+}
+
+printTimesTables(number: 4, end: 10)
+
+enum PasswordError: Error {
+    case short, obvious
+}
+func checkPassword(_ password: String) throws -&gt; String {
+    if password.count &lt; 5 {
+        throw PasswordError.short
+    }
+
+    if password == "12345" {
+        throw PasswordError.obvious
+    }
+
+    if password.count &lt; 8 {
+        return "OK"
+    } else if password.count &lt; 10 {
+        return "Good"
+    } else {
+        return "Excellent"
+    }
+}
+
+let pass = "12345"
+
+do {
+    let result = try checkPassword(pass)
+    print("Password rating: \(result)")
+} catch PasswordError.short {
+    print("Please use a longer password.")
+} catch PasswordError.obvious {
+    print("I have the same combination on my luggage!")
+} catch {
+    print("There was an error.")
+}
+
+
+enum SqRtError: Error {
+    case inValidNumber
+}
+let num = 121
+
+func squareRoot(_ num: Int) throws -&gt; Double {
+    if num &lt; 0 || num &gt; 10_000 {
+        throw SqRtError.inValidNumber
+    }
+    return sqrt(Double(num))
+}
+
+try print(squareRoot(100))
+try print(squareRoot(110))
+try print(squareRoot(200))
+</string>
+			<key>ModifiedRange</key>
+			<string>{1, 1437}</string>
+			<key>OriginalContent</key>
+			<string></string>
+			<key>OriginalRange</key>
+			<string>{1, 0}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>
